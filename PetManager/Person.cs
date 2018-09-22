@@ -1,5 +1,6 @@
 ﻿namespace PetManager
 {
+    using System;
     using System.ComponentModel;
 
     // INFO: Das ist ein Kommentar
@@ -37,13 +38,13 @@
                                  Firstname = "Max"
                              };
             person.Pets.Add(
-                new Pet
+                new Pet(new DateTime(2011, 1, 1))
                     {
                         Name = "Cäsar",
-                        Breed = "Kanarienvogel"
+                        Breed = "Kanarienvogel",
                     });
             person.Pets.Add(
-                new Pet
+                new Pet(new DateTime(2008, 2, 2))
                     {
                         Name = "Bello",
                         Breed = "Hund"
@@ -56,19 +57,19 @@
                              Firstname = "John"
                          };
             person.Pets.Add(
-                new Pet
+                new Pet(new DateTime(2016, 1, 1))
                     {
                         Name = "Fleckli",
                         Breed = "Kaninchen"
                     });
             person.Pets.Add(
-                new Pet
+                new Pet(new DateTime(2017, 1, 1))
                     {
                         Name = "Hoppel",
                         Breed = "Kaninchen"
                     });
             person.Pets.Add(
-                new Pet
+                new Pet(new DateTime(2018, 1, 1))
                     {
                         Name = "Wau",
                         Breed = "Hund"

@@ -1,12 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace PetManager
+{
+    using System;
 
-namespace PetManager {
-    public class Pet {
+    public class Pet
+    {
+        public Pet(DateTime birthday)
+        {
+            Birthday = birthday;
+        }
+
+        public int GetAge { get; set; }
+
         public string Name { get; set; }
+
         public string Breed { get; set; }
+
+        public DateTime Birthday { get; set; }
     }
 }
