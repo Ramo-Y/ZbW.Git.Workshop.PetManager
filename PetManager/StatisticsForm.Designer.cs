@@ -1,5 +1,5 @@
 ﻿namespace PetManager {
-    partial class StatisticForm {
+    partial class StatisticsForm {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -67,7 +67,7 @@
             this.Controls.Add(this.lblVal);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "StatisticForm";
+            this.Name = "StatisticsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Statistic";
             this.ResumeLayout(false);
