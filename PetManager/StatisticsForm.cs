@@ -1,22 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿namespace PetManager
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Windows.Forms;
 
-namespace PetManager {
-    public partial class StatisticsForm : Form {
-        public StatisticsForm(ICollection<Person> persons) {
+    public partial class StatisticsForm : Form
+    {
+        public StatisticsForm(ICollection<Person> persons)
+        {
             InitializeComponent();
 
             var avg = 0m;
-            if (persons.Any()) {
+            if (persons.Any())
+            {
                 var petCnt = 0m;
-                foreach (var person in persons) {
+                foreach (var person in persons)
+                {
                     petCnt += person.Pets.Count;
                 }
 
@@ -26,7 +26,8 @@ namespace PetManager {
             this.lblVal.Text = string.Format(this.lblVal.Text, avg.ToString("N2"));
         }
 
-        private void btnClose_Click(object sender, EventArgs e) {
+        private void btnClose_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }

@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿namespace PetManager
+{
+    using System;
+    using System.Windows.Forms;
 
-namespace PetManager {
-    static class Program {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
+    internal static class Program
+    {
         [STAThread]
-        static void Main() {
+        internal static void Main()
+        {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new PetManagerForm());
